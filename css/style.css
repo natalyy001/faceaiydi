@@ -1,9 +1,12 @@
-body{    background-color: #9991f8;
-    font-family: "Big Shoulders Stencil", cursive;
+body {
+    background-color: #9975fcf7;
+    font-family: "Eater", cursive;
     margin: 0;
     padding: 0;
+    display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column; /* Añadido para centrar verticalmente los elementos */
     height: 100vh; /* asegura que el body ocupe toda la altura de la ventana */
 }
 
@@ -12,7 +15,7 @@ body{    background-color: #9991f8;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: auto; /* Cambiado para que se ajuste al contenido */
 }
 
 #camera {
@@ -20,21 +23,9 @@ body{    background-color: #9991f8;
     height: 480px; /* ajusta el tamaño segun sea necesario */
 }
 
-#webcam-container {
-    #camera {
-        position: absolute;
-        top: 340px; /* ajusta esta propiedad segun sea necesario */
-        left: 640px; /* ajusta esta propiedad segun sea necesario */
-        width: 640px; /* ajusta el tamaño segun sea necesario */
-        height: 480px; /* ajusta el tamaño segun sea necesario */
-    } /* cierra el contenedor de la cámara */
-}
-
 #text-container {
-    margin-top: 20px; /* ajusta el margen según sea necesario */
-    text-align: center;
-    position: absolute;
-    top: 520px; /* ajusta esta propiedad según sea necesario para que el texto esté debajo de la cámara */
-    left: 50%;
-    transform: translateX(-50%);
-}
+        margin-top: 20px; /* ajusta el margen según sea necesario */
+        text-align: center;
+        font-size: 80px; /* ajusta el tamaño del texto según sea necesario */
+        font-family: "Eater", cursive; /* cambia la fuente a Eater */
+    }
